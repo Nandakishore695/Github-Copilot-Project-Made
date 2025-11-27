@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,216 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Welcome to Shinebar</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="#">Shinebar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
     </header>
     <main>
-        <p>This is the main content area for the Shinebar project.</p>
+        <div class="container-fluid">
+            <h1>Welcome to Shinebar</h1>
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="data-tab" data-bs-toggle="tab" href="#data" role="tab" aria-controls="data" aria-selected="true">Data</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="chat-tab" data-bs-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="false">Chat</a>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-3">
+                <div class="tab-pane fade show active" id="data" role="tabpanel" aria-labelledby="data-tab">
+                    <h2 class="h5 mb-3">Monthly Data</h2>
+                    <form>
+                        <div class="row g-3">
+                            <!-- January -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-jan" class="form-label">January</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-jan" name="january" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- February -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-feb" class="form-label">February</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-feb" name="february" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- March -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-mar" class="form-label">March</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-mar" name="march" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- April -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-apr" class="form-label">April</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-apr" name="april" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- May -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-may" class="form-label">May</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-may" name="may" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- June -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-jun" class="form-label">June</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-jun" name="june" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- July -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-jul" class="form-label">July</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-jul" name="july" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- August -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-aug" class="form-label">August</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-aug" name="august" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- September -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-sep" class="form-label">September</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-sep" name="september" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- October -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-oct" class="form-label">October</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-oct" name="october" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- November -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-nov" class="form-label">November</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-nov" name="november" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+
+                            <!-- December -->
+                            <div class="col-12 col-md-6">
+                                <label for="month-dec" class="form-label">December</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">Income:</span>
+                                    <input type="text" class="form-control" id="month-dec" name="december" placeholder="Amount">
+                                </div>
+                                <div class="input-group mt-2">
+                                    <span class="input-group-text">Expenses:</span>
+                                    <input type="text" class="form-control" id="month-jan-exp" name="january-expenses" placeholder="Amount">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 text-end">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+                    <!-- Chat content goes here -->
+                    <p class="text-muted">Chat tab content.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 Shinebar. All rights reserved.</p>
@@ -21,4 +226,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
